@@ -1,7 +1,7 @@
 {
   "name": "back-end",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000H\u00002\u0000-\u0000T\u0000O\u0000U\u0000R\u0000I\u0000S\u0000M\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
     "start": "nodemon Server.js"

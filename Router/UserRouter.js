@@ -12,12 +12,13 @@ const userRouter= express.Router();
 userRouter.route('/register').post(register)
 userRouter.route('/login').post(login)
 
-userRouter.route('/permitform_register').post(postPermit)
-userRouter.route('/permitform/:email').put(updatePermitForm).delete(deletePermitForm).get(getSinglePermitForm);
+// userRouter.route('/permitform_register').post(postPermit)
+// userRouter.route('/permitform/:email').put(updatePermitForm).delete(deletePermitForm).get(getSinglePermitForm);
 
 
-userRouter.route('/package').get(getAllPackage)
-userRouter.route('/packageDetails/:id').get(getSinglePackageById)
+// userRouter.route('/package').get(getAllPackage)
+// userRouter.route('/packageDetails/:id').get(getSinglePackageById)
+
 // userRouter.delete('/logout',logout)
 
 // userRouter.post("/refreshToken",newAccessToken)

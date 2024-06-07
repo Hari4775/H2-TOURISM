@@ -1,6 +1,6 @@
 
 const express = require('express');
-const connectDB = require('./Config/DBconnect');
+const {connectUserDB} = require('./Config/DBconnect');
 const userRouter = require('./Router/UserRouter');
 const errorHandler = require('./Middleware/ErrorHandler');
 const adminRoute = require('./Router/AdminRouter');
@@ -13,7 +13,7 @@ const app = express();
 const port = process.env.PORT || 5001;
 app.use(cors())
 
-connectDB();
+connectUserDB()
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
