@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 const Schema = mongoose.Schema;
 
 const userSchema= new Schema({
@@ -31,6 +32,11 @@ const userSchema= new Schema({
         enum:["user","admin","super_admin"]
     },
 
-})
+});
 
-module.exports = mongoose.model("User", userSchema);
+module.exports= mongoose.model('USER-REGISTER-DATA',userSchema)
+
+
+
+
+
